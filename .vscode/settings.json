@@ -1,0 +1,41 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "cmake.sourceDirectory": "/home/qq219/catkin_ws/src/learning",
+    "cSpell.words": [
+        "actionlib",
+        "loginfo",
+        "pubflag"
+    ],
+    "files.associations": {
+        "*.cctype": "cpp",
+        "*.clocale": "cpp",
+        "*.cmath": "cpp",
+        "*.csignal": "cpp",
+        "*.chrono": "cpp",
+        "*.complex": "cpp",
+        "*.condition_variable": "cpp",
+        "*.cstdint": "cpp",
+        "*.deque": "cpp",
+        "*.forward_list": "cpp",
+        "*.list": "cpp",
+        "*.unordered_map": "cpp",
+        "*.unordered_set": "cpp",
+        "*.vector": "cpp",
+        "*.ipp": "cpp"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', 'Droid Sans Fallback'",
+}

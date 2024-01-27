@@ -1,0 +1,8 @@
+prefix=/home/qq219/uav-ros1-ros2/install
+
+Name: learning
+Description: Description of learning
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

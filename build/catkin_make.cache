@@ -1,0 +1,2 @@
+learning:my_test:parameter
+-DCATKIN_DEVEL_PREFIX=/home/qq219/uav-ros1-ros2/devel -DCMAKE_INSTALL_PREFIX=/home/qq219/uav-ros1-ros2/install -G Unix Makefiles

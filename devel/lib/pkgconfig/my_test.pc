@@ -1,0 +1,8 @@
+prefix=/home/qq219/uav-ros1-ros2/devel
+
+Name: my_test
+Description: Description of my_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

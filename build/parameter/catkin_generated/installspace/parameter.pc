@@ -1,0 +1,8 @@
+prefix=/home/qq219/uav-ros1-ros2/install
+
+Name: parameter
+Description: Description of parameter
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
