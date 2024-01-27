@@ -101,6 +101,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -112,17 +123,6 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target test
 test:
@@ -166,36 +166,6 @@ preinstall/fast:
 depend:
 	cd /home/qq219/uav-ros1-ros2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-# Convenience name for target.
-learning_action/CMakeFiles/count_server.dir/rule:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/count_server.dir/rule
-.PHONY : learning_action/CMakeFiles/count_server.dir/rule
-
-# Convenience name for target.
-count_server: learning_action/CMakeFiles/count_server.dir/rule
-
-.PHONY : count_server
-
-# fast build rule for target.
-count_server/fast:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/count_server.dir/build.make learning_action/CMakeFiles/count_server.dir/build
-.PHONY : count_server/fast
-
-# Convenience name for target.
-learning_action/CMakeFiles/count_client.dir/rule:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/count_client.dir/rule
-.PHONY : learning_action/CMakeFiles/count_client.dir/rule
-
-# Convenience name for target.
-count_client: learning_action/CMakeFiles/count_client.dir/rule
-
-.PHONY : count_client
-
-# fast build rule for target.
-count_client/fast:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/count_client.dir/build.make learning_action/CMakeFiles/count_client.dir/build
-.PHONY : count_client/fast
 
 # Convenience name for target.
 learning_action/CMakeFiles/learning_action_generate_messages.dir/rule:
@@ -288,6 +258,66 @@ _learning_action_generate_messages_check_deps_CountActionResult/fast:
 .PHONY : _learning_action_generate_messages_check_deps_CountActionResult/fast
 
 # Convenience name for target.
+learning_action/CMakeFiles/count_server.dir/rule:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/count_server.dir/rule
+.PHONY : learning_action/CMakeFiles/count_server.dir/rule
+
+# Convenience name for target.
+count_server: learning_action/CMakeFiles/count_server.dir/rule
+
+.PHONY : count_server
+
+# fast build rule for target.
+count_server/fast:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/count_server.dir/build.make learning_action/CMakeFiles/count_server.dir/build
+.PHONY : count_server/fast
+
+# Convenience name for target.
+learning_action/CMakeFiles/count_client.dir/rule:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/count_client.dir/rule
+.PHONY : learning_action/CMakeFiles/count_client.dir/rule
+
+# Convenience name for target.
+count_client: learning_action/CMakeFiles/count_client.dir/rule
+
+.PHONY : count_client
+
+# fast build rule for target.
+count_client/fast:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/count_client.dir/build.make learning_action/CMakeFiles/count_client.dir/build
+.PHONY : count_client/fast
+
+# Convenience name for target.
+learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule
+.PHONY : learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule
+
+# Convenience name for target.
+_learning_action_generate_messages_check_deps_CountActionGoal: learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule
+
+.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal
+
+# fast build rule for target.
+_learning_action_generate_messages_check_deps_CountActionGoal/fast:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build
+.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal/fast
+
+# Convenience name for target.
+learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule
+.PHONY : learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule
+
+# Convenience name for target.
+_learning_action_generate_messages_check_deps_CountResult: learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule
+
+.PHONY : _learning_action_generate_messages_check_deps_CountResult
+
+# fast build rule for target.
+_learning_action_generate_messages_check_deps_CountResult/fast:
+	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build
+.PHONY : _learning_action_generate_messages_check_deps_CountResult/fast
+
+# Convenience name for target.
 learning_action/CMakeFiles/learning_action_geneus.dir/rule:
 	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/learning_action_geneus.dir/rule
 .PHONY : learning_action/CMakeFiles/learning_action_geneus.dir/rule
@@ -361,21 +391,6 @@ actionlib_msgs_generate_messages_nodejs: learning_action/CMakeFiles/actionlib_ms
 actionlib_msgs_generate_messages_nodejs/fast:
 	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make learning_action/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-learning_action/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : learning_action/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: learning_action/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/_catkin_empty_exported_target.dir/build.make learning_action/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
 
 # Convenience name for target.
 learning_action/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
@@ -466,36 +481,6 @@ actionlib_generate_messages_cpp: learning_action/CMakeFiles/actionlib_generate_m
 actionlib_generate_messages_cpp/fast:
 	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make learning_action/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
-
-# Convenience name for target.
-learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule
-.PHONY : learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule
-
-# Convenience name for target.
-_learning_action_generate_messages_check_deps_CountActionGoal: learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/rule
-
-.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal
-
-# fast build rule for target.
-_learning_action_generate_messages_check_deps_CountActionGoal/fast:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build
-.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal/fast
-
-# Convenience name for target.
-learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f CMakeFiles/Makefile2 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule
-.PHONY : learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule
-
-# Convenience name for target.
-_learning_action_generate_messages_check_deps_CountResult: learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/rule
-
-.PHONY : _learning_action_generate_messages_check_deps_CountResult
-
-# fast build rule for target.
-_learning_action_generate_messages_check_deps_CountResult/fast:
-	cd /home/qq219/uav-ros1-ros2/build && $(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build
-.PHONY : _learning_action_generate_messages_check_deps_CountResult/fast
 
 # Convenience name for target.
 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountGoal.dir/rule:
@@ -696,30 +681,29 @@ help:
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... count_server"
-	@echo "... count_client"
 	@echo "... learning_action_generate_messages"
 	@echo "... learning_action_genlisp"
 	@echo "... _learning_action_generate_messages_check_deps_CountAction"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... _learning_action_generate_messages_check_deps_CountActionResult"
+	@echo "... count_server"
+	@echo "... count_client"
+	@echo "... _learning_action_generate_messages_check_deps_CountActionGoal"
+	@echo "... edit_cache"
+	@echo "... _learning_action_generate_messages_check_deps_CountResult"
 	@echo "... learning_action_geneus"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... install/strip"
 	@echo "... learning_action_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... _learning_action_generate_messages_check_deps_CountActionFeedback"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_generate_messages_cpp"
-	@echo "... _learning_action_generate_messages_check_deps_CountActionGoal"
-	@echo "... edit_cache"
-	@echo "... _learning_action_generate_messages_check_deps_CountResult"
 	@echo "... _learning_action_generate_messages_check_deps_CountGoal"
 	@echo "... _learning_action_generate_messages_check_deps_CountFeedback"
 	@echo "... learning_action_generate_messages_cpp"

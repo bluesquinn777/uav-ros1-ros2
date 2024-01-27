@@ -489,6 +489,12 @@ learning_action_BINARY_DIR:STATIC=/home/qq219/uav-ros1-ros2/build/learning_actio
 learning_action_SOURCE_DIR:STATIC=/home/qq219/uav-ros1-ros2/src/learning_action
 
 //Value Computed by CMake
+learning_launch_BINARY_DIR:STATIC=/home/qq219/uav-ros1-ros2/build/learning_launch
+
+//Value Computed by CMake
+learning_launch_SOURCE_DIR:STATIC=/home/qq219/uav-ros1-ros2/src/learning_launch
+
+//Value Computed by CMake
 learning_service_BINARY_DIR:STATIC=/home/qq219/uav-ros1-ros2/build/learning_service
 
 //Value Computed by CMake
@@ -702,7 +708,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

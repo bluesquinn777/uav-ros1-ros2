@@ -285,6 +285,19 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named _catkin_empty_exported_target
+
+# Build rule for target.
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
+
+# fast build rule for target.
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
@@ -493,32 +506,6 @@ my_test/fast:
 .PHONY : my_test/fast
 
 #=============================================================================
-# Target rules for targets named count_server
-
-# Build rule for target.
-count_server: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 count_server
-.PHONY : count_server
-
-# fast build rule for target.
-count_server/fast:
-	$(MAKE) -f learning_action/CMakeFiles/count_server.dir/build.make learning_action/CMakeFiles/count_server.dir/build
-.PHONY : count_server/fast
-
-#=============================================================================
-# Target rules for targets named count_client
-
-# Build rule for target.
-count_client: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 count_client
-.PHONY : count_client
-
-# fast build rule for target.
-count_client/fast:
-	$(MAKE) -f learning_action/CMakeFiles/count_client.dir/build.make learning_action/CMakeFiles/count_client.dir/build
-.PHONY : count_client/fast
-
-#=============================================================================
 # Target rules for targets named learning_action_generate_messages
 
 # Build rule for target.
@@ -597,6 +584,58 @@ _learning_action_generate_messages_check_deps_CountActionResult/fast:
 .PHONY : _learning_action_generate_messages_check_deps_CountActionResult/fast
 
 #=============================================================================
+# Target rules for targets named count_server
+
+# Build rule for target.
+count_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 count_server
+.PHONY : count_server
+
+# fast build rule for target.
+count_server/fast:
+	$(MAKE) -f learning_action/CMakeFiles/count_server.dir/build.make learning_action/CMakeFiles/count_server.dir/build
+.PHONY : count_server/fast
+
+#=============================================================================
+# Target rules for targets named count_client
+
+# Build rule for target.
+count_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 count_client
+.PHONY : count_client
+
+# fast build rule for target.
+count_client/fast:
+	$(MAKE) -f learning_action/CMakeFiles/count_client.dir/build.make learning_action/CMakeFiles/count_client.dir/build
+.PHONY : count_client/fast
+
+#=============================================================================
+# Target rules for targets named _learning_action_generate_messages_check_deps_CountActionGoal
+
+# Build rule for target.
+_learning_action_generate_messages_check_deps_CountActionGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _learning_action_generate_messages_check_deps_CountActionGoal
+.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal
+
+# fast build rule for target.
+_learning_action_generate_messages_check_deps_CountActionGoal/fast:
+	$(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build
+.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal/fast
+
+#=============================================================================
+# Target rules for targets named _learning_action_generate_messages_check_deps_CountResult
+
+# Build rule for target.
+_learning_action_generate_messages_check_deps_CountResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _learning_action_generate_messages_check_deps_CountResult
+.PHONY : _learning_action_generate_messages_check_deps_CountResult
+
+# fast build rule for target.
+_learning_action_generate_messages_check_deps_CountResult/fast:
+	$(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build
+.PHONY : _learning_action_generate_messages_check_deps_CountResult/fast
+
+#=============================================================================
 # Target rules for targets named learning_action_geneus
 
 # Build rule for target.
@@ -660,19 +699,6 @@ actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
 actionlib_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f learning_action/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make learning_action/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named _catkin_empty_exported_target
-
-# Build rule for target.
-_catkin_empty_exported_target: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	$(MAKE) -f learning_action/CMakeFiles/_catkin_empty_exported_target.dir/build.make learning_action/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
 # Target rules for targets named actionlib_generate_messages_lisp
@@ -751,32 +777,6 @@ actionlib_generate_messages_cpp: cmake_check_build_system
 actionlib_generate_messages_cpp/fast:
 	$(MAKE) -f learning_action/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make learning_action/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named _learning_action_generate_messages_check_deps_CountActionGoal
-
-# Build rule for target.
-_learning_action_generate_messages_check_deps_CountActionGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _learning_action_generate_messages_check_deps_CountActionGoal
-.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal
-
-# fast build rule for target.
-_learning_action_generate_messages_check_deps_CountActionGoal/fast:
-	$(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal.dir/build
-.PHONY : _learning_action_generate_messages_check_deps_CountActionGoal/fast
-
-#=============================================================================
-# Target rules for targets named _learning_action_generate_messages_check_deps_CountResult
-
-# Build rule for target.
-_learning_action_generate_messages_check_deps_CountResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _learning_action_generate_messages_check_deps_CountResult
-.PHONY : _learning_action_generate_messages_check_deps_CountResult
-
-# fast build rule for target.
-_learning_action_generate_messages_check_deps_CountResult/fast:
-	$(MAKE) -f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build.make learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult.dir/build
-.PHONY : _learning_action_generate_messages_check_deps_CountResult/fast
 
 #=============================================================================
 # Target rules for targets named _learning_action_generate_messages_check_deps_CountGoal
@@ -1645,6 +1645,7 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... _catkin_empty_exported_target"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_cpp"
@@ -1661,28 +1662,27 @@ help:
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... my_test"
-	@echo "... count_server"
-	@echo "... count_client"
 	@echo "... learning_action_generate_messages"
 	@echo "... learning_action_genlisp"
 	@echo "... _learning_action_generate_messages_check_deps_CountAction"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... actionlib_msgs_generate_messages_eus"
 	@echo "... _learning_action_generate_messages_check_deps_CountActionResult"
+	@echo "... count_server"
+	@echo "... count_client"
+	@echo "... _learning_action_generate_messages_check_deps_CountActionGoal"
+	@echo "... _learning_action_generate_messages_check_deps_CountResult"
 	@echo "... learning_action_geneus"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... learning_action_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... _learning_action_generate_messages_check_deps_CountActionFeedback"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_generate_messages_cpp"
-	@echo "... _learning_action_generate_messages_check_deps_CountActionGoal"
-	@echo "... _learning_action_generate_messages_check_deps_CountResult"
 	@echo "... _learning_action_generate_messages_check_deps_CountGoal"
 	@echo "... _learning_action_generate_messages_check_deps_CountFeedback"
 	@echo "... learning_action_generate_messages_cpp"
