@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/qq219/uav-ros1-ros2/build/gtest/cmake_install.cmake")
   include("/home/qq219/uav-ros1-ros2/build/learning_launch/cmake_install.cmake")
+  include("/home/qq219/uav-ros1-ros2/build/learning_plugin/cmake_install.cmake")
   include("/home/qq219/uav-ros1-ros2/build/learning/cmake_install.cmake")
   include("/home/qq219/uav-ros1-ros2/build/my_test/cmake_install.cmake")
   include("/home/qq219/uav-ros1-ros2/build/learning_action/cmake_install.cmake")

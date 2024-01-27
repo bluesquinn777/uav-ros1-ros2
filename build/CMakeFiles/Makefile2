@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/qq219/uav-ros1-ros2/build
 # The main recursive "all" target.
 all: gtest/all
 all: learning_launch/all
+all: learning_plugin/all
 all: learning/all
 all: my_test/all
 all: learning_action/all
@@ -67,6 +68,7 @@ all: learning_topic/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: learning_launch/preinstall
+preinstall: learning_plugin/preinstall
 preinstall: learning/preinstall
 preinstall: my_test/preinstall
 preinstall: learning_action/preinstall
@@ -84,6 +86,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: learning_launch/clean
+clean: learning_plugin/clean
 clean: learning/clean
 clean: my_test/clean
 clean: learning_action/clean
@@ -248,6 +251,26 @@ learning_launch/preinstall:
 learning_launch/clean: learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : learning_launch/clean
+
+#=============================================================================
+# Directory level rules for directory learning_plugin
+
+# Recursive "all" directory target.
+learning_plugin/all: learning_plugin/CMakeFiles/polygon_loader.dir/all
+learning_plugin/all: learning_plugin/CMakeFiles/polygon_plugins.dir/all
+
+.PHONY : learning_plugin/all
+
+# Recursive "preinstall" directory target.
+learning_plugin/preinstall:
+
+.PHONY : learning_plugin/preinstall
+
+# Recursive "clean" directory target.
+learning_plugin/clean: learning_plugin/CMakeFiles/polygon_loader.dir/clean
+learning_plugin/clean: learning_plugin/CMakeFiles/polygon_plugins.dir/clean
+
+.PHONY : learning_plugin/clean
 
 #=============================================================================
 # Directory level rules for directory learning_service
@@ -654,6 +677,60 @@ _catkin_empty_exported_target: learning_launch/CMakeFiles/_catkin_empty_exported
 learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean:
 	$(MAKE) -f learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
 .PHONY : learning_launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+#=============================================================================
+# Target rules for target learning_plugin/CMakeFiles/polygon_loader.dir
+
+# All Build rule for target.
+learning_plugin/CMakeFiles/polygon_loader.dir/all:
+	$(MAKE) -f learning_plugin/CMakeFiles/polygon_loader.dir/build.make learning_plugin/CMakeFiles/polygon_loader.dir/depend
+	$(MAKE) -f learning_plugin/CMakeFiles/polygon_loader.dir/build.make learning_plugin/CMakeFiles/polygon_loader.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=75,76 "Built target polygon_loader"
+.PHONY : learning_plugin/CMakeFiles/polygon_loader.dir/all
+
+# Build rule for subdir invocation for target.
+learning_plugin/CMakeFiles/polygon_loader.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq219/uav-ros1-ros2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_plugin/CMakeFiles/polygon_loader.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq219/uav-ros1-ros2/build/CMakeFiles 0
+.PHONY : learning_plugin/CMakeFiles/polygon_loader.dir/rule
+
+# Convenience name for target.
+polygon_loader: learning_plugin/CMakeFiles/polygon_loader.dir/rule
+
+.PHONY : polygon_loader
+
+# clean rule for target.
+learning_plugin/CMakeFiles/polygon_loader.dir/clean:
+	$(MAKE) -f learning_plugin/CMakeFiles/polygon_loader.dir/build.make learning_plugin/CMakeFiles/polygon_loader.dir/clean
+.PHONY : learning_plugin/CMakeFiles/polygon_loader.dir/clean
+
+#=============================================================================
+# Target rules for target learning_plugin/CMakeFiles/polygon_plugins.dir
+
+# All Build rule for target.
+learning_plugin/CMakeFiles/polygon_plugins.dir/all:
+	$(MAKE) -f learning_plugin/CMakeFiles/polygon_plugins.dir/build.make learning_plugin/CMakeFiles/polygon_plugins.dir/depend
+	$(MAKE) -f learning_plugin/CMakeFiles/polygon_plugins.dir/build.make learning_plugin/CMakeFiles/polygon_plugins.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=77,78 "Built target polygon_plugins"
+.PHONY : learning_plugin/CMakeFiles/polygon_plugins.dir/all
+
+# Build rule for subdir invocation for target.
+learning_plugin/CMakeFiles/polygon_plugins.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq219/uav-ros1-ros2/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_plugin/CMakeFiles/polygon_plugins.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/qq219/uav-ros1-ros2/build/CMakeFiles 0
+.PHONY : learning_plugin/CMakeFiles/polygon_plugins.dir/rule
+
+# Convenience name for target.
+polygon_plugins: learning_plugin/CMakeFiles/polygon_plugins.dir/rule
+
+.PHONY : polygon_plugins
+
+# clean rule for target.
+learning_plugin/CMakeFiles/polygon_plugins.dir/clean:
+	$(MAKE) -f learning_plugin/CMakeFiles/polygon_plugins.dir/build.make learning_plugin/CMakeFiles/polygon_plugins.dir/clean
+.PHONY : learning_plugin/CMakeFiles/polygon_plugins.dir/clean
 
 #=============================================================================
 # Target rules for target learning/CMakeFiles/std_msgs_generate_messages_py.dir
@@ -2682,7 +2759,7 @@ learning_service/CMakeFiles/turtlesim_generate_messages_py.dir/clean:
 learning_service/CMakeFiles/turtle_vel_cmd.dir/all:
 	$(MAKE) -f learning_service/CMakeFiles/turtle_vel_cmd.dir/build.make learning_service/CMakeFiles/turtle_vel_cmd.dir/depend
 	$(MAKE) -f learning_service/CMakeFiles/turtle_vel_cmd.dir/build.make learning_service/CMakeFiles/turtle_vel_cmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=85,86 "Built target turtle_vel_cmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=89,90 "Built target turtle_vel_cmd"
 .PHONY : learning_service/CMakeFiles/turtle_vel_cmd.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2899,7 +2976,7 @@ learning_service/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean:
 learning_service/CMakeFiles/turtle_spawn.dir/all:
 	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/depend
 	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=81,82 "Built target turtle_spawn"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=85,86 "Built target turtle_spawn"
 .PHONY : learning_service/CMakeFiles/turtle_spawn.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3118,7 +3195,7 @@ learning_service/CMakeFiles/learning_service_genpy.dir/clean:
 learning_topic/CMakeFiles/turtle_subscriber.dir/all:
 	$(MAKE) -f learning_topic/CMakeFiles/turtle_subscriber.dir/build.make learning_topic/CMakeFiles/turtle_subscriber.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/turtle_subscriber.dir/build.make learning_topic/CMakeFiles/turtle_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=83,84 "Built target turtle_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=87,88 "Built target turtle_subscriber"
 .PHONY : learning_topic/CMakeFiles/turtle_subscriber.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3176,7 +3253,7 @@ learning_topic/CMakeFiles/learning_topic_generate_messages.dir/clean:
 learning_topic/CMakeFiles/student_subscriber.dir/all: learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/student_subscriber.dir/build.make learning_topic/CMakeFiles/student_subscriber.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/student_subscriber.dir/build.make learning_topic/CMakeFiles/student_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=77,78 "Built target student_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=81,82 "Built target student_subscriber"
 .PHONY : learning_topic/CMakeFiles/student_subscriber.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3313,7 +3390,7 @@ learning_topic/CMakeFiles/learning_topic_geneus.dir/clean:
 learning_topic/CMakeFiles/student_publisher.dir/all: learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/student_publisher.dir/build.make learning_topic/CMakeFiles/student_publisher.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/student_publisher.dir/build.make learning_topic/CMakeFiles/student_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=75,76 "Built target student_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=79,80 "Built target student_publisher"
 .PHONY : learning_topic/CMakeFiles/student_publisher.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3394,7 +3471,7 @@ learning_topic/CMakeFiles/learning_topic_genlisp.dir/clean:
 learning_topic/CMakeFiles/turtle_publisher.dir/all:
 	$(MAKE) -f learning_topic/CMakeFiles/turtle_publisher.dir/build.make learning_topic/CMakeFiles/turtle_publisher.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/turtle_publisher.dir/build.make learning_topic/CMakeFiles/turtle_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=79,80 "Built target turtle_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/qq219/uav-ros1-ros2/build/CMakeFiles --progress-num=83,84 "Built target turtle_publisher"
 .PHONY : learning_topic/CMakeFiles/turtle_publisher.dir/all
 
 # Build rule for subdir invocation for target.

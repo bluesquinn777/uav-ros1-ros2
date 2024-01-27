@@ -43,6 +43,15 @@
 /home/qq219/uav-ros1-ros2/build/learning_launch/CMakeFiles/edit_cache.dir
 /home/qq219/uav-ros1-ros2/build/learning_launch/CMakeFiles/test.dir
 /home/qq219/uav-ros1-ros2/build/learning_launch/CMakeFiles/_catkin_empty_exported_target.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/install/local.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/install.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/list_install_components.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/rebuild_cache.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/edit_cache.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/test.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/install/strip.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/polygon_loader.dir
+/home/qq219/uav-ros1-ros2/build/learning_plugin/CMakeFiles/polygon_plugins.dir
 /home/qq219/uav-ros1-ros2/build/learning/CMakeFiles/install/local.dir
 /home/qq219/uav-ros1-ros2/build/learning/CMakeFiles/rebuild_cache.dir
 /home/qq219/uav-ros1-ros2/build/learning/CMakeFiles/edit_cache.dir

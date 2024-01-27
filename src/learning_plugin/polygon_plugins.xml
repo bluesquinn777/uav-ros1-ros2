@@ -1,0 +1,12 @@
+<!-- library标签声明了要输出的lib文件所在位置的相对路径 -->
+<library path="lib/libpolygon_plugins">
+    <!-- class标签内则具体声明了plugin的信息, 其中type标签声明了plugin的完整类型, 例如
+        polygon_plugins::Triangle, 而base_class_type标签则声明了该plugin完整类型的父类, 
+        例如polygon_base::RegularPolygon, description标签则是声明了该plugin的具体作用. -->
+    <class type="polygon_plugins::Triangle" base_class_type="polygon_base::RegularPolygon">
+        <description>This is a triangle plugin.</description>
+    </class>
+    <class type="polygon_plugins::Square" base_class_type="polygon_base::RegularPolygon">
+        <description>This is a square plugin.</description>
+    </class>
+</library>
