@@ -394,6 +394,12 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/noetic/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
@@ -475,6 +481,12 @@ learning_BINARY_DIR:STATIC=/home/qq219/uav-ros1-ros2/build/learning
 
 //Value Computed by CMake
 learning_SOURCE_DIR:STATIC=/home/qq219/uav-ros1-ros2/src/learning
+
+//Value Computed by CMake
+learning_action_BINARY_DIR:STATIC=/home/qq219/uav-ros1-ros2/build/learning_action
+
+//Value Computed by CMake
+learning_action_SOURCE_DIR:STATIC=/home/qq219/uav-ros1-ros2/src/learning_action
 
 //Value Computed by CMake
 learning_service_BINARY_DIR:STATIC=/home/qq219/uav-ros1-ros2/build/learning_service
@@ -690,7 +702,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

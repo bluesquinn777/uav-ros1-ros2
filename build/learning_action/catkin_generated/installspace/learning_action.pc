@@ -1,0 +1,8 @@
+prefix=/home/qq219/uav-ros1-ros2/install
+
+Name: learning_action
+Description: Description of learning_action
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 
