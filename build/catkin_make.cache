@@ -1,2 +1,2 @@
-learning:learning_action:learning_launch:learning_plugin:learning_service:learning_topic:my_test:parameter
+learning:learning_action:learning_launch:learning_plugin:learning_service:learning_topic:my_test:parameter:rviz_teleop_commander
 -DCATKIN_DEVEL_PREFIX=/home/qq219/uav-ros1-ros2/devel -DCMAKE_INSTALL_PREFIX=/home/qq219/uav-ros1-ros2/install -G Unix Makefiles

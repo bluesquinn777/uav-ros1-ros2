@@ -1,0 +1,8 @@
+prefix=/home/qq219/uav-ros1-ros2/devel
+
+Name: rviz_teleop_commander
+Description: Description of rviz_teleop_commander
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

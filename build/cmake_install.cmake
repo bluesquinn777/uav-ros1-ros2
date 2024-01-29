@@ -139,6 +139,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/qq219/uav-ros1-ros2/build/parameter/cmake_install.cmake")
   include("/home/qq219/uav-ros1-ros2/build/learning_service/cmake_install.cmake")
   include("/home/qq219/uav-ros1-ros2/build/learning_topic/cmake_install.cmake")
+  include("/home/qq219/uav-ros1-ros2/build/rviz_teleop_commander/cmake_install.cmake")
 
 endif()
 
