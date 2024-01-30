@@ -27,7 +27,9 @@
         "*.unordered_map": "cpp",
         "*.unordered_set": "cpp",
         "*.vector": "cpp",
-        "*.ipp": "cpp"
+        "*.ipp": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
     },
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,

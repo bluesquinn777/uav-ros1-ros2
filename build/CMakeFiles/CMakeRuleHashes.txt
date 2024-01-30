@@ -7,6 +7,7 @@ db3b2ef8632b2ef48353e64d76d0fda7 /home/qq219/uav-ros1-ros2/devel/include/learnin
 2ad4883beaeffff4e40ac85254845d0f /home/qq219/uav-ros1-ros2/devel/include/learning_action/CountGoal.h
 8e7be4d079d8f25ad492fc598034029f /home/qq219/uav-ros1-ros2/devel/include/learning_action/CountResult.h
 c8ffc0ccbe8b53aae28fd08bc1782dd2 /home/qq219/uav-ros1-ros2/devel/include/learning_service/Add.h
+f3c25060ee0c78c340b17bbe5af67df1 /home/qq219/uav-ros1-ros2/devel/include/learning_synchronizer/Person.h
 ae4e21125355317de432aebbb68d6c6c /home/qq219/uav-ros1-ros2/devel/include/learning_topic/Student.h
 57ce704057224efbdae22174ae297ad4 /home/qq219/uav-ros1-ros2/devel/include/parameter/TutorialsConfig.h
 89a2d412644629270b86ddeb53ffcd87 /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_action/msg/_CountAction.py
@@ -19,6 +20,8 @@ f327df648d1bad6b121b6f035328e010 /home/qq219/uav-ros1-ros2/devel/lib/python3/dis
 b1378282e5513f7df4778996fa4061cb /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_action/msg/__init__.py
 68deca3c5aa5275deb214cf791de223b /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_service/srv/_Add.py
 1669c80ee8b3908ead7622823861f7f3 /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_service/srv/__init__.py
+7a77feac0c209965572385a86d772979 /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_synchronizer/msg/_Person.py
+e4cbcc0cdbee873fa35f5c727490e72d /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_synchronizer/msg/__init__.py
 cd702ef13369b3175ee96b09e1afaa02 /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_topic/msg/_Student.py
 334d0e48201881f5782f1c25da1b8c0a /home/qq219/uav-ros1-ros2/devel/lib/python3/dist-packages/learning_topic/msg/__init__.py
 418dcddd7d428d7e72f24c25e65a1604 /home/qq219/uav-ros1-ros2/devel/share/common-lisp/ros/learning_action/msg/CountAction.lisp
@@ -29,6 +32,7 @@ ed2a8b742148257454d8e63b9f532b75 /home/qq219/uav-ros1-ros2/devel/share/common-li
 59ab5dc868d326b9c0d7eb0275cbf296 /home/qq219/uav-ros1-ros2/devel/share/common-lisp/ros/learning_action/msg/CountGoal.lisp
 a19101e26cc33569d0e7895e80a12e00 /home/qq219/uav-ros1-ros2/devel/share/common-lisp/ros/learning_action/msg/CountResult.lisp
 32cd87fe21d13c242afb3521b8daad5b /home/qq219/uav-ros1-ros2/devel/share/common-lisp/ros/learning_service/srv/Add.lisp
+ef3146d688e1b60553aafff5ae48bbcc /home/qq219/uav-ros1-ros2/devel/share/common-lisp/ros/learning_synchronizer/msg/Person.lisp
 fdf0b2a84bed5a8175fd81086f304f1c /home/qq219/uav-ros1-ros2/devel/share/common-lisp/ros/learning_topic/msg/Student.lisp
 c03376461ac9a0e6a2b42ef45047af90 /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_action/msg/CountAction.js
 9deddaf42bc8fa31ea60533852854301 /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_action/msg/CountActionFeedback.js
@@ -38,6 +42,7 @@ fbe7041b8603aadf1b83575a9370212e /home/qq219/uav-ros1-ros2/devel/share/gennodejs
 d541957d9e66f0b19f6d94e564afb4ee /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_action/msg/CountGoal.js
 ad80df2f35cc23d167fe8f49c3cd2217 /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_action/msg/CountResult.js
 c2a164603392deb7c04bb0ab3756f8b9 /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_service/srv/Add.js
+68473fa1d8b14a9fd57318bd17a6c815 /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_synchronizer/msg/Person.js
 e38e80f5f40ad82e2356948031247349 /home/qq219/uav-ros1-ros2/devel/share/gennodejs/ros/learning_topic/msg/Student.js
 96c7c5ac775a10220f8b8be41c6e8dac /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_action/manifest.l
 868bb10c559cc9f3658628d93526b2a0 /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_action/msg/CountAction.l
@@ -49,13 +54,15 @@ e38e80f5f40ad82e2356948031247349 /home/qq219/uav-ros1-ros2/devel/share/gennodejs
 59004409e2fce19ca38fb944c2206e68 /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_action/msg/CountResult.l
 7770641311910727a79efd755689096d /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_service/manifest.l
 66563952f482b2d83f1c354fa0ef8eaf /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_service/srv/Add.l
+3fadc7b92760c77073ba76233ab29e73 /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_synchronizer/manifest.l
+555a92f2d5787594324c636f57a83fce /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_synchronizer/msg/Person.l
 b8135f703ddbb52f7301918f4214abdb /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_topic/manifest.l
 32f8b25335a524e6b5ebc63d0076d344 /home/qq219/uav-ros1-ros2/devel/share/roseus/ros/learning_topic/msg/Student.l
 96d4fffe85f32e100a77a0f59f40fa56 CMakeFiles/clean_test_results
-f99247ba25bfb8f241d48f66b65bdf10 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountAction
-3781384f930762ed1c08d9bd0a808f39 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionFeedback
-51fbd318bede8d7b09995c1b4ed997ab learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal
-d5eba7d7aa8601490112a381b71dbb3e learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionResult
+4e5a06245b2db688ca117fa752d87bd8 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountAction
+00765a83bcfd01565ed1c1e3cd99d764 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionFeedback
+c9cc9ba016703dae8f6169130b15ae0f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionGoal
+a2908e17758d5d61fd57771eebc52c0e learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountActionResult
 b50b8b7fd129965f7aea082a61ecec88 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountFeedback
 12df9eac6fa270a9d62a630fc4aa1f7f learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountGoal
 0d29913d9bbca6265ce3c7488960cc16 learning_action/CMakeFiles/_learning_action_generate_messages_check_deps_CountResult
@@ -70,6 +77,12 @@ b50b8b7fd129965f7aea082a61ecec88 learning_action/CMakeFiles/_learning_action_gen
 1bf4208da4a8a6d3a21776406a2fff10 learning_service/CMakeFiles/learning_service_generate_messages_lisp
 1bf4208da4a8a6d3a21776406a2fff10 learning_service/CMakeFiles/learning_service_generate_messages_nodejs
 1bf4208da4a8a6d3a21776406a2fff10 learning_service/CMakeFiles/learning_service_generate_messages_py
+1a48c0c3a3aa320eee278ae19915a481 learning_synchronizer/CMakeFiles/_learning_synchronizer_generate_messages_check_deps_Person
+b415f0cd1dd7993095ce97edd70c67a7 learning_synchronizer/CMakeFiles/learning_synchronizer_generate_messages_cpp
+b415f0cd1dd7993095ce97edd70c67a7 learning_synchronizer/CMakeFiles/learning_synchronizer_generate_messages_eus
+b415f0cd1dd7993095ce97edd70c67a7 learning_synchronizer/CMakeFiles/learning_synchronizer_generate_messages_lisp
+b415f0cd1dd7993095ce97edd70c67a7 learning_synchronizer/CMakeFiles/learning_synchronizer_generate_messages_nodejs
+b415f0cd1dd7993095ce97edd70c67a7 learning_synchronizer/CMakeFiles/learning_synchronizer_generate_messages_py
 307387ea5ca1629f74c94eb7b8cee8c7 learning_topic/CMakeFiles/_learning_topic_generate_messages_check_deps_Student
 66a782c523f9426392e06254114ac9e8 learning_topic/CMakeFiles/learning_topic_generate_messages_cpp
 66a782c523f9426392e06254114ac9e8 learning_topic/CMakeFiles/learning_topic_generate_messages_eus

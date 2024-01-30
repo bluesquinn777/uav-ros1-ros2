@@ -1,0 +1,8 @@
+prefix=/home/qq219/uav-ros1-ros2/devel
+
+Name: learning_synchronizer
+Description: Description of learning_synchronizer
+Version: 0.0.0
+Cflags: -I/home/qq219/uav-ros1-ros2/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_filters roscpp sensor_msgs std_msgs message_runtime
